@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+	<div class="col-6 mx-auto">
+		<h1 class="mt-3">Result Pet data</h1>
+		<ul class="list-group mb-3">
+		  <li class="list-group-item d-flex justify-content-between align-items-center">
+		    Name
+		    <span class="badge badge-primary badge-pill"> <p class="my-auto" th:text=" ${pet.name}" /> </span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-center">
+		    Age
+		    <span class="badge badge-success badge-pill"> <p class="my-auto" th:text=" ${pet.age}" /></span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-center">
+		    Price
+		    <span class="badge badge-danger badge-pill">  <p class="my-auto" th:text="${pet.price}" /></span>
+		  </li>
+		</ul>
+		
+	    <a href="/">Submit another pet</a>
+	</div>
+</div>
+
+</body>
+</html>
